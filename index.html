@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Activity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Activity Tracker</h1>
+        <p>Welcome! Track your learning activities easily.</p>
+    </header>
+
+    <section class="container">
+        <h2>My Activities</h2>
+
+        <ul id="activityList">
+            <li>
+                <strong>HTML Assignment</strong><br>
+                Create basic web page
+                <span class="status pending">Pending</span>
+                <button onclick="markCompleted(this)">Mark Completed</button>
+            </li>
+
+            <li>
+                <strong>CSS Practice</strong><br>
+                Style the webpage
+                <span class="status pending">Pending</span>
+                <button onclick="markCompleted(this)">Mark Completed</button>
+            </li>
+
+            <li>
+                <strong>JavaScript Basics</strong><br>
+                Learn functions
+                <span class="status pending">Pending</span>
+                <button onclick="markCompleted(this)">Mark Completed</button>
+            </li>
+        </ul>
+
+        <div class="progress">
+            <p id="progressText">0 out of 3 activities completed</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
